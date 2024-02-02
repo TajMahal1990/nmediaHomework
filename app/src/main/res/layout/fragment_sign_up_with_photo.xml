@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SignUpWithPhotoFragment">
+
+    <ImageView
+        android:id="@+id/photoForSignUp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutA"
+        android:adjustViewBounds="true"
+        android:background="@color/light_grey"
+        tools:src="@tools:sample/avatars"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/photoForSignUp"
+        app:layout_constraintStart_toEndOf="@id/photoForSignUp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/baseline_delete_24"
+        android:background="@android:color/transparent"
+        android:id="@+id/removePhotoForSignUp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/pickPhotoForSignUp"
+        app:layout_constraintStart_toEndOf="@id/pickPhotoForSignUp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/baseline_camera_24"
+        android:background="@android:color/transparent"
+        android:id="@+id/takePhotoForSignUp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/photoForSignUp"
+        app:layout_constraintStart_toStartOf="@id/removePhotoForSignUp"
+
+        android:src="@drawable/baseline_photo_24"
+        android:background="@android:color/transparent"
+        android:id="@+id/pickPhotoForSignUp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutA"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/photoForSignUp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutB"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayoutA"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutA"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutA">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите логин"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutC"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:passwordToggleContentDescription="description"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayoutA"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutA"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutB">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Введите пароль"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutD"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:passwordToggleContentDescription="description"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayoutA"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutA"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutC">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Подтвердите пароль"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@id/textInputLayoutA"
+        app:layout_constraintStart_toStartOf="@id/textInputLayoutA"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutD" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

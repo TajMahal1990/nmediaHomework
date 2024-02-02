@@ -1,0 +1,20 @@
+package ru.netology.nmedia.error
+
+import java.io.IOException
+import java.sql.SQLException
+
+sealed class AppError(var code: String) : RuntimeException() {
+    companion object {
+        fun from(e: Throwable): AppError = when (e) {
+            is AppError -> e
+            is SQLException -> DbError
+            is IOException -> NetworkError
+            else -> MyUnknownError
+        }
+    }
+}
+
+class ApiError(val status: Int, code: String) : AppError(code)
+object NetworkError : AppError("error_network")
+object DbError : AppError("error_db")
+object MyUnknownError : AppError("error_unknown")

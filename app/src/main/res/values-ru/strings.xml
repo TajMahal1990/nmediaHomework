@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">НМедиа</string>
+    <string name="nmedia">НМедиа!</string>
+    <string name="avatar_Desc">Аватар</string>
+    <string name="menu_Desc">Меню</string>
+    <string name="like_Desc">Лайк</string>
+    <string name="share_Desc">Поделиться</string>
+    <string name="watch_Desc">Просмотры</string>
+    <string name="remove">Удалить</string>
+    <string name="post_text">Текст</string>
+    <string name="edit">Редактировать</string>
+    <string name="edit_message">Редактирование</string>
+    <string name="Save">сохранить</string>
+    <string name="imagePen">изображение ручки</string>
+    <string name="cancelEdit">отмена редактирования</string>
+    <string name="chooser_share_post">Поделиться</string>
+    <string name="description_post_save">Ок</string>
+    <string name="add_post">Добавить пост</string>
+    <string name="error_empty_content">Контент не может быть пустым</string>
+    <string name="google_play_unavailable">Google API недоступно</string>
+    <string name="notification_user_liked">%1$s поставил лайк посту %2$s</string>
+    <string name="channel_remote_name">Уведомления с сервера</string>
+    <string name="channel_remote_description">Уведомления с удаленного сервера</string>
+    <string name="warning">Сообщение не может быть отображено</string>
+    <string name="newpost">%1$s опубликовал новый пост</string>
+    <string name="retry_loading">Повторить попытку</string>
+    <string name="empty_posts">Нет сообщений</string>
+    <string name="error_loading">Что-то пошло не так</string>
+</resources>

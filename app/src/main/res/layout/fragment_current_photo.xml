@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.CurrentPhotoFragment">
+
+    <ImageView
+        android:id="@+id/currentPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:src="@sample/posts_avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonReturn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_back_24"
+            style="@style/Widget.AppTheme.DarkIconButton"
+            tools:src="@drawable/baseline_back_24"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/likePhoto"
+            android:layout_weight="1"
+            style="@style/Widget.AppTheme.DarkLikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            android:layout_marginTop="@dimen/spacing_4dp"
+            android:checkable="true"
+            app:icon="@drawable/ic_like_selector"
+            tools:src="@drawable/ic_liked_24"
+            tools:text="1" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

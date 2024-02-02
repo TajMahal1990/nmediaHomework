@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.AppTheme.IconButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/button_selector</item>
+        <item name="android:paddingStart">@dimen/icon_button_padding</item>
+        <item name="android:paddingEnd">@dimen/icon_button_padding</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="Widget.AppTheme.DarkIconButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/dark_button_selector</item>
+        <item name="android:paddingStart">@dimen/icon_button_padding</item>
+        <item name="android:paddingEnd">@dimen/icon_button_padding</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.AppTheme.LikeButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/like_selector</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:textColor">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="Widget.AppTheme.DarkLikeButton" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="iconTint">@color/dark_like_selector</item>
+        <item name="android:minWidth">@dimen/icon_button_min_size</item>
+        <item name="android:minHeight">@dimen/icon_button_min_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Theme.NMedia.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+</resources>
